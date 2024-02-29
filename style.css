@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy', 'system-ui';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 0.5px solid lightcoral;
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.num {
+    position: relative;
+    height: 170px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid lightcoral;
+    background-image: linear-gradient(rgb(37, 35, 35), black);
+}
+
+.Anmi-disp {
+    font-size: 110px;
+    font-weight: 600;
+    color: lightcoral;
+    position: absolute;
+    transform: translateY(3rem) scale(0.1);
+    visibility: hidden;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.disp {
+    font-size: 110px;
+    font-weight: 600;
+    color: lightcoral;
+    position: absolute;
+    transform: translateY(0rem) scale(1);
+    visibility: visible;
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+
+.btns {
+    height: 130px;
+    width: 100%;
+    background-image: linear-gradient(rgb(37, 35, 35), black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    text-decoration: none;
+    margin: 5px;
+    background-color: lightcoral;
+    padding: 8px 10px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(216, 106, 106);
+}
+
